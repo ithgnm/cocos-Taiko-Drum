@@ -1,7 +1,7 @@
 {
   "title": "taiko",
   "packageName": "",
-  "startScene": "1239b4b3-9d4d-4bf7-a1ba-e89100a79053",
+  "startScene": "ea1f7e64-e0e7-4178-a3b3-4b6397ca1d1d",
   "excludeScenes": [],
   "includeSDKBox": false,
   "orientation": {
@@ -17,7 +17,7 @@
   "optimizeHotUpdate": false,
   "md5Cache": false,
   "encryptJs": true,
-  "xxteaKey": "8250da82-1ec5-41",
+  "xxteaKey": "dac4c189-b1c2-4e",
   "zipCompressJs": true,
   "fb-instant-games": {},
   "android": {
