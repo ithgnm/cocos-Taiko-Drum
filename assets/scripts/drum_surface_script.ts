@@ -10,13 +10,18 @@ export default class DrumController extends cc.Component {
     @property({type: cc.AudioClip})
     audio: cc.AudioClip = null;
 
+    @property({type: cc.AudioClip})
+    audioOut: cc.AudioClip = null;
+
+    @property(cc.Animation)
+    bodyAnimation: cc.Animation = null;
+
     onLoad () {
         this.node.on(cc.Node.EventType.TOUCH_START, function (touch, event) {
-            var touch_location = touch.getLocation();
-            if (cc.Intersection.pointInPolygon(touch_location, this.collider.world.points))
-                this.surfaceSound(this.surface_type);
-            else this.surfaceSound(this.surface_type + 1);
-              
+            var touchLocation = touch.getLocation();
+            if (cc.Intersection.pointInPolygon(touchLocation, this.collider.world.points))
+                this.surfaceSound(this.audio);
+            else this.surfaceSound(this.audioOut);
         }, this);
     }
 
@@ -35,8 +40,9 @@ export default class DrumController extends cc.Component {
 
     }
 
-    surfaceSound () {
-        cc.audioEngine.play(this.audio, false, 1);
+    surfaceSound (audio) {
+        cc.audioEngine.play(audio, false, 1);
         this.node.parent.getComponent(cc.Animation).play();
+        this.bodyAnimation.play();
     }
 }

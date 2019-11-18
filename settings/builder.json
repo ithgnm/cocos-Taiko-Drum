@@ -21,7 +21,7 @@
   "zipCompressJs": true,
   "fb-instant-games": {},
   "android": {
-    "packageName": ""
+    "packageName": "ait.oic.taiko"
   },
   "ios": {
     "packageName": ""
@@ -39,5 +39,5 @@
     "scheme": "https",
     "skipRecord": false
   },
-  "appBundle": false
+  "appBundle": true
 }

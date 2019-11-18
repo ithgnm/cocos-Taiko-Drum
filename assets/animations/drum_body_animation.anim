@@ -1,0 +1,42 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "drum_body_animation",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.1,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {},
+    "props": {
+      "position": [
+        {
+          "frame": 0,
+          "value": [
+            -1,
+            -170.81199645996094,
+            0
+          ]
+        },
+        {
+          "frame": 0.05,
+          "value": [
+            -1,
+            -175.81199645996094,
+            0
+          ]
+        },
+        {
+          "frame": 0.1,
+          "value": [
+            -1,
+            -170.81199645996094,
+            0
+          ]
+        }
+      ]
+    }
+  },
+  "events": []
+}
