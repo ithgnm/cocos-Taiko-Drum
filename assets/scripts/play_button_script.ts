@@ -10,9 +10,6 @@ export default class PlayButtonController extends cc.Component {
     @property(cc.Label)
     current: cc.Label = null;
 
-    @property(cc.Label)
-    duration: cc.Label = null;
-
     @property
     audioSource = null;
 
@@ -25,9 +22,6 @@ export default class PlayButtonController extends cc.Component {
                 this.audioSource.volume = 0.5;
                 this.audioSource.play();
                 isBegin = false;
-                let time = this.audioSource.getDuration();
-                time = Math.round(time * 100)/100;
-                this.duration.string = '/   ' + time.toString();
             }
             else if (this.audioSource.isPlaying)
                 this.audioSource.pause();
